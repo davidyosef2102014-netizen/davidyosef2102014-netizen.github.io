@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>האפליקציות שלי</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background: #f0f4f8;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
+  }
+  h1 {
+    font-size: 2rem;
+    color: #1a1a2e;
+    margin-bottom: 10px;
+  }
+  p.sub {
+    color: #666;
+    margin-bottom: 40px;
+    font-size: 1rem;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    max-width: 400px;
+  }
+  .card {
+    background: white;
+    border-radius: 20px;
+    padding: 24px;
+    text-decoration: none;
+    color: inherit;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0,0,0,0.12);
+  }
+  .icon {
+    font-size: 3rem;
+    width: 70px;
+    height: 70px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+  }
+  .card-text h2 { font-size: 1.2rem; color: #1a1a2e; margin-bottom: 4px; }
+  .card-text p { font-size: 0.85rem; color: #888; }
+  .budget .icon { background: #fff3e0; }
+  .chat .icon   { background: #e8f5e9; }
+  .social .icon { background: #e3f2fd; }
+</style>
+</head>
+<body>
+  <h1>📱 האפליקציות שלי</h1>
+  <p class="sub">בחר אפליקציה כדי להמשיך</p>
+
+  <div class="cards">
+    <a class="card budget" href="/birgsol-budget/">
+      <div class="icon">💰</div>
+      <div class="card-text">
+        <h2>הכסף שלי</h2>
+        <p>ניהול תקציב חודשי, חיסכון ומטרות</p>
+      </div>
+    </a>
+
+    <a class="card chat" href="/watsapp/birgsolai.html">
+      <div class="icon">💬</div>
+      <div class="card-text">
+        <h2>BIRGSOL AI</h2>
+        <p>שיחות עם בינה מלאכותית</p>
+      </div>
+    </a>
+
+    <a class="card social" href="/birgsol-social/">
+      <div class="icon">🤖</div>
+      <div class="card-text">
+        <h2>AI Social</h2>
+        <p>רשת חברתית עם בינה מלאכותית</p>
+      </div>
+    </a>
+  </div>
+</body>
+</html>
